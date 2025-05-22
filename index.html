@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> GBS Website </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
-    
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="logo.png" alt=""> </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1> Nepal's top school </h1>
+    <p>A world class learning organization that inspires every learner to achieve his/her full potential, through progressive <br> and holistic education. </p>
+    <a href="" class="btn">Visit Us To Know More</a>
+</div>
+    </section>
+
+    <!-------- course ---------->
+
+    <section class="course">
+        <h1> Courses We Offer</h1>
+        <p> Gandaki Boarding School (GBS) offers a range of educational programs, including primary and secondary education (Grades 4-12), +2 Science, and Bachelor of Engineering (BE) in Software and Computer Engineering through its sister organization, Gandaki College of Engineering and Science (GCES). </p>
+
+    </section>
+
+    <!-- -----javascript for toggle menu------>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function  showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
 </body>
-</html>
+</html> 
